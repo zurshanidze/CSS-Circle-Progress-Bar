@@ -1,0 +1,73 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins, sans-serif;";
+}
+
+body {
+  background: #d980fa;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.skill {
+  width: 160px;
+  height: 160px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /*   background:#009432; */
+}
+
+.outer {
+  width: 160px;
+  height: 160px;
+  border-radius: 50%;
+  padding: 20px;
+  /*   border:1px solid blue; */
+  box-shadow: 5px 5px 10px -1px rgba(0, 0, 0, 0.7),
+    -5px -5px 10px 1px rgba(217, 128, 250, 1);
+}
+
+.inner {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  /*   border:1px solid blue; */
+  box-shadow: inset 4px 4px 7px -1px rgba(0, 0, 0, 0.2),
+    inset -2px -2px 5px 1px rgba(217, 128, 250, 0.7) -0.5px -0.5px 0px
+      rgba(217, 128, 250, 1),
+    0.5px 0.5px 0px rgba(0, 0, 0, 0.15), 0px 10px 10px -10px rgba(0, 0, 0, 0.05);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#number {
+  color: #3f3c42;
+  font-weight: bold;
+  font-weight: 3rem;
+}
+
+circle {
+  fill: none;
+  /*   stroke: cornflowerblue; */
+  stroke: url(#GradientColor);
+  stroke-width: 22px;
+  stroke-dasharray: 472;
+  stroke-dashoffset: 472;
+  animation: progress 2s linear forwards;
+}
+
+svg {
+  position: absolute;
+}
+
+@keyframes progress {
+  100% {
+    stroke-dashoffset: 103.84;
+  }
+}
